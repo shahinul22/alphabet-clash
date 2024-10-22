@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alphabet Clash</title>
+    <!-- tailwind and daisy UI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
+
 <body>
-    <h1>Alphabet</h1>
+    <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <section class="home min-h-screen text-white  flex flex-col justify-center  items-center">
+            <div class="flex flex-col items-center gap-10">
+                <h1 class="text-8xl text-white font-poppins uppercase">Alphabet Clash</h1>
+                <p class="text-white font-anton">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="font-anton btn text-black">Play Now</button>
+            </div>
+        </section>
+        <section class="play-ground"></section>
+        <section class="score"></section>
+    </main>
+
 </body>
+
 </html>
