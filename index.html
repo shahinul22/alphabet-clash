@@ -15,6 +15,9 @@
         rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
 </head>
 
@@ -66,6 +69,8 @@
                         <kbd id="l" class="kbd">l</kbd>
                     </div>
                     <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd id="shift" class="kbd" >Shift <i class="fa-solid fa-arrow-up"></i>
+                        </kbd>
                         <kbd id="z" class="kbd">z</kbd>
                         <kbd id="x" class="kbd">x</kbd>
                         <kbd id="c" class="kbd">c</kbd>
@@ -82,13 +87,14 @@
                     <button class="btn text-white bg-[#894189] rounded-full px-4">
                         Life
                         <img src="images/Group 23.svg" alt="">
-                        <span>1</span>
+                        <span id="current-life">5</span>
                         
                       </button>
                       <button class="btn text-white bg-[#360490] rounded-full px-4">
                         <span>Score</span> 
                         <img src="images/monetization_on.svg" alt="">
-                        <span>1</span>
+                        <span id="current-score">0</span>
+
                        
                       </button>
                  </div>
@@ -96,13 +102,13 @@
 
         </section>
         <!-- score section -->
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="show-score" class="score flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-2xl">
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score:</span>
-                    <span>14</span>
+                    <span id="result-score">0</span>
                 </h1>
-                <button class="btn">Play Again</button>
+                <button onclick="playAgain()" class="btn">Play Again</button>
                 <p>Practice will make you Pro</p>
             </div>
         </section>
